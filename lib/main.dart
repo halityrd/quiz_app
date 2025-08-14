@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quiz_app/start_screen.dart';
 
 void main() {
   runApp(
@@ -15,7 +16,7 @@ void main() {
               end: Alignment.bottomRight,
             ),
           ),
-          child: const Text('Quiz App'),
+          child: StartScreen(),
         ),
       ),
     ),
