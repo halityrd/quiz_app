@@ -23,7 +23,7 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
         children: [
           const Text('The question...', style: TextStyle(color: Colors.white)),
           const SizedBox(height: 30),
-          ...currentQuestion.answers.map((answer) {
+          ...currentQuestion.getShuffledAnswers().map((answer) {
             return AnswerButton(answerText: answer, onTap: () {});
           }),
         ],
